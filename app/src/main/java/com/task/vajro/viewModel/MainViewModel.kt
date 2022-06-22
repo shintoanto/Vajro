@@ -18,6 +18,7 @@ class MainViewModel(private val repository: MockRepository) : ViewModel() {
             mockLiveData()
         }
     }
+
     suspend fun mockLiveData() {
         viewModelScope.launch {
             val responseRepo = repository.mockApiRepository()
